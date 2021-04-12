@@ -5,7 +5,7 @@ from athenaCL.libATH import athenaObj
 '''
 Executes a single athenaCL command and returns the result as a string.
 '''
-def process_commands(commands):
+def process_command(command):
     # Non-interactive interpretation.
     interpreter = athenaObj.Interpreter('cgi')
     return interpreter.cmd(command)
